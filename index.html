@@ -19,6 +19,44 @@
         <h1>Social Media App</h1>
     </header>
     <main>
+        <!-- Leave Form (Bootstrap) -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <div class="card mb-4">
+            <div class="card-header bg-primary text-white">Leave Application Form</div>
+            <div class="card-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="employeeName" class="form-label">Employee Name</label>
+                        <input type="text" class="form-control" id="employeeName" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="leaveType" class="form-label">Leave Type</label>
+                        <select class="form-select" id="leaveType">
+                            <option selected>Choose...</option>
+                            <option value="casual">Casual Leave</option>
+                            <option value="sick">Sick Leave</option>
+                            <option value="earned">Earned Leave</option>
+                        </select>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="fromDate" class="form-label">From</label>
+                            <input type="date" class="form-control" id="fromDate">
+                        </div>
+                        <div class="col">
+                            <label for="toDate" class="form-label">To</label>
+                            <input type="date" class="form-control" id="toDate">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="reason" class="form-label">Reason</label>
+                        <textarea class="form-control" id="reason" rows="2" placeholder="Enter reason for leave"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+        <!-- Dummy Posts -->
         <div class="post">
             <span class="username">alice</span>
             <span class="timestamp">· 2 mins ago</span>
